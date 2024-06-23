@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap');
+*{
+ font-family: "Playwrite NZ", cursive;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+  gap: 3rem;
+  padding-top: 1rem;
+  background: rgb(34, 39, 58);
+}
+
+.container{
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
+.panel{
+  border-radius:50px;
+  background-position: center;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  color: white;
+  flex:0.5;
+  cursor: pointer;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h1{
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel.active{
+  flex: 5;
+}
+
+.panel.active h1{
+  opacity: 1;
+}
+
+@media(max-width :580px){
+  .container{ 
+    width: 100vw;
+  }
+
+    .panel:nth-of-type(5),.panel:nth-of-type(6), .panel:nth-of-type(7), .panel:nth-of-type(8){
+    display: none;
+  }
+}
