@@ -56,7 +56,11 @@ body{
 
 @media(max-width :580px){
   .container{ 
-    width: 100vw;
+    width: 90vw;
+  }
+
+  .panel{
+    height: 25rem;
   }
 
     .panel:nth-of-type(5),.panel:nth-of-type(6), .panel:nth-of-type(7), .panel:nth-of-type(8){
