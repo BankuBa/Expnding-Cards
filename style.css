@@ -13,6 +13,7 @@ body{
   gap: 3rem;
   padding-top: 1rem;
   background: rgb(34, 39, 58);
+  padding-bottom: 1rem;
 }
 
 .container{
